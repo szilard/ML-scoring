@@ -27,12 +27,12 @@ res.text
 
 ## time it
 
-%time for index, row in df.iterrows(): \
+%time for index, row in dfN.iterrows(): \
    res = requests.post(url, data = row.to_json()) 
 
 
 ## time 1 req
    
-%time requests.post(url, data = row.to_json())
+%time requests.post(url, data = df1.to_json())
 
 
