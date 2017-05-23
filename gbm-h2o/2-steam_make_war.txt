@@ -1,0 +1,10 @@
+
+## steam-1.1.6
+
+
+java -jar var/master/assets/jetty-runner.jar var/master/assets/ROOT.war
+
+curl -X POST --form pojo=@airline_GBM.java --form jar=@h2o-genmodel.jar localhost:8080/makewar > airline_GBM_POJO.war
+curl -X POST --form mojo=@airline_GBM.zip --form jar=@h2o-genmodel.jar localhost:8080/makewar > airline_GBM_MOJO.war
+
+
