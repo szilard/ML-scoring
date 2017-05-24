@@ -7,7 +7,7 @@ libraries. The focus will be on scoring provided via a REST API (via web request
 
 ### h2o.ai
 
-Trained LR, RF, GBM and NN using h2o and exported Java scoring code. Built a prediction service using Steam. 
+Trained LR, RF (100 trees, depth 10), GBM (100 trees, 10 depth) and NN (2 hidden layers, 200 neurons each) using h2o and exported Java scoring code. Built a prediction service using Steam. 
 
 Scoring sequentially using Python via REST API. TODO: Parallelize the client (server is multithreaded AFAIK).
 
