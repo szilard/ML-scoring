@@ -1,13 +1,13 @@
 
-## Machine Learning Scoring
+#Machine Learning Scoring
 
 This repo aims to compare the scoring speed of several open source machine learning
 libraries. The focus will be on scoring provided via a REST API (via web requests).
 
 
-### h2o.ai
+## h2o.ai
 
-Trained LR, RF (100 trees, depth 10), GBM (100 trees, 10 depth) and NN (2 hidden layers, 200 neurons each) using h2o and exported Java scoring code. Built a prediction service using Steam. 
+Trained LR, RF (100 trees, depth 10), GBM (100 trees, depth 10) and NN (2 hidden layers, 200 neurons each) using h2o and exported Java scoring code. Built a prediction service using Steam. 
 
 Scoring sequentially using Python via REST API. TODO: Parallelize the client (server is multithreaded AFAIK).
 
