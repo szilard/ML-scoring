@@ -1,6 +1,6 @@
 
 
-export MODEL=LR   ## LR/RF/GBM/NN
+export MODEL=GBM   ## LR/RF/GBM/NN
 export PM=POJO   ## POJO/MOJO
 
 java -jar jetty-runner.jar --port 20000 h2o_${MODEL}_${PM}.war
