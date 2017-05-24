@@ -29,3 +29,7 @@ GBM  | POJO | 2.31146812439
 GBM  | MOJO | 2.14600563049
 NN   | POJO | 2.1960735321
 
+Larger models: GBM MOJO: 1000 trees: depth 10: 2.8ms, depth 20: 3.3ms
+
+
+
