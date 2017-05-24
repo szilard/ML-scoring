@@ -10,17 +10,3 @@ for PM in POJO MOJO; do
 done
 done
 
-
-#ho2,LR,POJO,2.05516815186
-#ho2,LR,MOJO,2.07090377808
-#ho2,RF,POJO,2.28381156921
-#ho2,RF,MOJO,2.18892097473
-#ho2,GBM,POJO,2.31146812439
-#ho2,GBM,MOJO,2.14600563049
-#ho2,NN,POJO,2.1960735321
-
-# ^^^ client/network/serving/etc time dominates scoring 
-
-
-
-

@@ -11,7 +11,8 @@ Trained LR, RF (100 trees, depth 10), GBM (100 trees, depth 10) and NN (2 hidden
 
 Scoring sequentially using Python via REST API. TODO: Parallelize the client (server is multithreaded AFAIK).
 
-Round-trip time is about 2ms for all algos. This includes client request, network trip,
+Round-trip time is about 2ms for all algos. See details [here](h2o).
+This includes client request, network trip,
 server prep and scoring itself. TODO: Get the breakdown. 
 
 It seems all algos are very fast, maybe scoring itself is <1ms for each of them (LR should be orders of magnitude faster than RF/GBM). TODO: Measure scoring time from Java.
