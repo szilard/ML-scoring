@@ -11,9 +11,9 @@
 
 Timing for GBM POJO:
 
-![](tm_gbm_pojo)
+![](tm_gbm_pojo.png)
 
-JVM needs warm up. Also there are hickups (even 1 sec) (garbage collection?)
+JVM needs warming up. Also there are hickups (even 1 sec) (garbage collection?)
 
 5. Loop over all algos and get median response time:
 
