@@ -1,0 +1,8 @@
+```{r}
+
+tm <- readr::read_csv("tm.csv")$V1
+
+
+
+
+```

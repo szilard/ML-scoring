@@ -1,10 +1,14 @@
 
-java -jar jetty-runner.jar --port 20000 airline_GBM_POJO.war
-java -jar jetty-runner.jar --port 20001 airline_GBM_MOJO.war
+
+export MODEL=LR   ## LR/RF/GBM/NN
+export PM=POJO   ## POJO/MOJO
+
+java -jar jetty-runner.jar --port 20000 h2o_${MODEL}_${PM}.war
+
+
+
 
 time curl "http://localhost:20000/predict?Month=c-8&DayofMonth=c-21&DayOfWeek=c-7&DepTime=1934&UniqueCarrier=AA&Origin=ATL&Dest=DFW&Distance=732"
-
-time curl "http://localhost:20001/predict?Month=c-8&DayofMonth=c-21&DayOfWeek=c-7&DepTime=1934&UniqueCarrier=AA&Origin=ATL&Dest=DFW&Distance=732"
 
 ##head train-0.1m.csv
 ##"Month","DayofMonth","DayOfWeek","DepTime","UniqueCarrier","Origin","Dest","Distance","dep_delayed_15min"
