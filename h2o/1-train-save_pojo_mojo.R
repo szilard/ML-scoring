@@ -4,6 +4,7 @@
 library(h2o)
 h2o.init(nthreads = -1)
 
+
 dx_train <- h2o.importFile("https://s3.amazonaws.com/benchm-ml--main/train-0.1m.csv")
 dx_test <- h2o.importFile("https://s3.amazonaws.com/benchm-ml--main/test.csv")
 
@@ -49,8 +50,9 @@ h2o.download_pojo(md_lr, path = "./h2o")
 h2o.download_pojo(md_rf, path = "./h2o")
 h2o.download_pojo(md_gbm, path = "./h2o")
 h2o.download_pojo(md_nn, path = "./h2o")
+
 h2o.download_mojo(md_lr, path = "./h2o")
 h2o.download_mojo(md_rf, path = "./h2o")
 h2o.download_mojo(md_gbm, path = "./h2o")
-h2o.download_mojo(md_nn, path = "./h2o")
+##h2o.download_mojo(md_nn, path = "./h2o")   ## not suported 
 

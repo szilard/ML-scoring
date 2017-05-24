@@ -5,7 +5,23 @@ cp /home/ubuntu/bin/steam-1.1.6-linux-amd64/var/master/assets/* ./     ## jetty-
 
 java -jar jetty-runner.jar ROOT.war
 
-curl -X POST --form pojo=@airline_GBM.java --form jar=@h2o-genmodel.jar localhost:8080/makewar > airline_GBM_POJO.war
-curl -X POST --form mojo=@airline_GBM.zip --form jar=@h2o-genmodel.jar localhost:8080/makewar > airline_GBM_MOJO.war
 
+curl -X POST --form pojo=@h2o_LR.java --form jar=@h2o-genmodel.jar \
+              localhost:8080/makewar > h2o_LR_POJO.war
+curl -X POST --form mojo=@h2o_LR.zip --form jar=@h2o-genmodel.jar \
+              localhost:8080/makewar > h2o_LR_MOJO.war
 
+curl -X POST --form pojo=@h2o_RF.java --form jar=@h2o-genmodel.jar \
+              localhost:8080/makewar > h2o_RF_POJO.war
+curl -X POST --form mojo=@h2o_RF.zip --form jar=@h2o-genmodel.jar \
+              localhost:8080/makewar > h2o_RF_MOJO.war
+
+curl -X POST --form pojo=@h2o_GBM.java --form jar=@h2o-genmodel.jar \
+              localhost:8080/makewar > h2o_GBM_POJO.war
+curl -X POST --form mojo=@h2o_GBM.zip --form jar=@h2o-genmodel.jar \
+              localhost:8080/makewar > h2o_GBM_MOJO.war
+
+curl -X POST --form pojo=@h2o_NN.java --form jar=@h2o-genmodel.jar \
+              localhost:8080/makewar > h2o_NN_POJO.war
+##curl -X POST --form mojo=@h2o_NN.zip --form jar=@h2o-genmodel.jar \     
+##              localhost:8080/makewar > h2o_NN_MOJO.war                 ## not supported
