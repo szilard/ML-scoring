@@ -1,6 +1,8 @@
 
 ## h2o.ai
 
+The steps below correspond to the files in this subdir.
+
 1. Train (LR/RF/GBM/NN) and save model as POJO/MOJO.
 
 2. Use steam to build war from POJO/MOJO.
