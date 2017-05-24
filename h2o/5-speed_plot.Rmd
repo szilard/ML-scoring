@@ -1,8 +1,18 @@
 ```{r}
 
-tm <- readr::read_csv("tm.csv")$V1
+library(readr)
+library(ggplot2)
+library(dplyr)
 
+d <- read_csv("tm.csv", col_names = FALSE) 
+names(d) <- c("i","tm")
 
+outl <- sort(d[100:nrow(d),]$tm, decreasing = TRUE)[10]
+dd <- d[100:nrow(d),] %>% filter(tm<outl) %>% mutate(tm = tm*1000)
+  
 
+ggplot(dd) + geom_line(aes(x = i, y = tm)) + ylim(c(0,NA))
+
+median(dd$tm)
 
 ```
