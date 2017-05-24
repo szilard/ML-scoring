@@ -20,7 +20,7 @@ for index, row in df.iterrows():
    tm[index] = time.time() - start
   
   
-pd.DataFrame(tm).to_csv("tm.csv", header = False, index = False)
+pd.DataFrame(tm).to_csv("tm.csv", header = False)
 
 
 
