@@ -17,3 +17,5 @@ server prep and scoring itself. TODO: Get the breakdown.
 Detailed code and results [here](h2o).
 
 It seems all algos are very fast, maybe scoring itself is <1ms for each of them (LR should be orders of magnitude faster than RF/GBM). TODO: Measure scoring time from Java.
+
+TODO: Concurrency/throuput, some results [here](https://github.com/szilard/ML-scoring/tree/master/h2o#thoughput). 
