@@ -32,4 +32,16 @@ NN   | POJO | 2.1960735321
 Larger models: GBM MOJO: 1000 trees: depth 10: 2.8ms, depth 20: 3.3ms
 
 
+#### Thoughput
+
+Some experiments with concurrent requests on a 8-core EC2 server using however
+the same inputs for each request (which is somewhat cheating because of caching effects,
+one should loop over a testset to measure this properly) are 
+[here](6-concurrent_ab.sh).
+
+
+
+
+
+
 
