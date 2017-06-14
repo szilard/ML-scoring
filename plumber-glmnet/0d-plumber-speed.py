@@ -9,7 +9,7 @@ url = "http://localhost:8000/mean"
 
 tm = np.zeros(1000)
 
-for i in arange(100): 
+for i in range(100): 
    params = "{samples: 10}"
    start  = time.time()
    res = requests.post(url, data = params) 
