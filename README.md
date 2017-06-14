@@ -23,6 +23,7 @@ TODO: Concurrency/throughput, some attempts [here](https://github.com/szilard/ML
 
 ## plumber
 
-The `plumber` R package provides a REST API for an R function. There is a ~5ms overhead (5.8ms measured via the Python client).  
+The `plumber` R package provides a REST API for an R function. There is a ~5ms overhead for using the framework 
+(5.8ms measured via the Python client).  
 
 
