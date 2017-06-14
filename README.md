@@ -19,3 +19,10 @@ Detailed code and results [here](h2o).
 It seems all algos are very fast, maybe scoring itself is <1ms for each of them (LR should be orders of magnitude faster than RF/GBM). TODO: Measure scoring time from Java.
 
 TODO: Concurrency/throughput, some attempts [here](https://github.com/szilard/ML-scoring/tree/master/h2o#thoughput). 
+
+
+## plumber
+
+The `plumber` R package provides a REST API for an R function. There is a 5-6ms overhead 
+
+
