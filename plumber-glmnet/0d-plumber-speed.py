@@ -3,7 +3,7 @@ import numpy as np
 import requests
 import time
 
-url = "http://localhost:8000/mean"
+url = "http://localhost:8000/ff"
 
 
 tm = np.zeros(1000)
