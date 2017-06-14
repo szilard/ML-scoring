@@ -9,7 +9,7 @@ url = "http://localhost:8000/mean"
 tm = np.zeros(1000)
 
 for i in range(1000):
-   params = "{x1: " + np.random.choice(100,1) + "}"
+   params = "{x1: " + str(np.random.choice(100,1)) + "}"
    start  = time.time()
    res = requests.get(url, params = params)
    print(res.text)
