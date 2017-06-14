@@ -1,8 +1,7 @@
 
-#* @get /mean
-normalMean <- function(samples=10){
-  data <- rnorm(samples)
-  mean(data)
+#* @get /ff
+ff <- function(x1=1){
+  x1
 }
 
 
