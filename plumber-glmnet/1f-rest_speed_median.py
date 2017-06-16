@@ -15,11 +15,11 @@ tm = np.zeros(500)
 
 for index, row in df.iterrows(): 
    params = row.to_json()
-   print params
+   ##print params
    start  = time.time()
    res = requests.get(url, data = params) 
    tm[index] = time.time() - start
-   print res.text
+   ##print res.text
   
   
 print np.median(tm)*1000
