@@ -53,7 +53,10 @@ Total round-trip only 8ms (6ms for plumber and I [measured](https://github.com/s
 
 ### xgboost with plumber
 
-...
+TODO: 1-hot encoding at scoring.
+
+It [seems](https://github.com/szilard/ML-scoring/blob/master/plumber-xgboost/6-xgboost_scoring_speed.R#L27-L33) 
+scoring itself is ~1ms.
 
 
 
