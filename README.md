@@ -35,7 +35,8 @@ Code [here](plumber-glmnet).
 
 Latency is ~25ms of which ~5ms is plumber and 20ms scoring with `glmnetUtils`. 
 
-Further inspection shows about 14ms doing the one-hot encoding in `glmnetUtils` and 1ms scoring with `glmnet`. TODO: What's
+Further [inspection](https://github.com/szilard/ML-scoring/blob/master/plumber-glmnet/2a-glmnetUtils-scoring_speed.R#L18-L24) 
+shows about 14ms doing the one-hot encoding in `glmnetUtils` and 1ms scoring with `glmnet`. TODO: What's
 the remaining 5ms?
 
 
