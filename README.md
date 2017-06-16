@@ -39,7 +39,7 @@ Further [inspection](https://github.com/szilard/ML-scoring/blob/master/plumber-g
 shows about 14ms doing the one-hot encoding in `glmnetUtils` and 1ms scoring with `glmnet`,
 a total of 15ms. TODO: What's the remaining 5ms?
 
-### gbm (the R package `gbm`) with plumber
+### gbm (the R package gbm) with plumber
 
 Trained `gbm` 100 trees, depth 10. `gbm` deals directly with categorical values (no need for one-hot encoding).
 
