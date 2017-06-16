@@ -59,6 +59,13 @@ It [seems](https://github.com/szilard/ML-scoring/blob/master/plumber-xgboost/6-x
 scoring itself is ~1ms. One-hot encoding will probably take a lot more.
 
 
+### lightgbm with plumber
+
+TODO: Integer encoding
+
+Scoring itself is 1ms.
+
+
 ------------------------------------------------------------------------
 
 ## Rant
