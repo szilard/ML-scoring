@@ -33,8 +33,10 @@ one-hot encoding under the hood and calling `glmnet`).
 
 Code [here](plumber-glmnet).
 
-Latency is ~25ms of which ~5ms is plumber and 20ms scoring with `glmnetUtils`. TODO: Breakdown scoring into 
-one-hot encoding and the scoring proper with `glmnet`.
+Latency is ~25ms of which ~5ms is plumber and 20ms scoring with `glmnetUtils`. 
+
+Further inspection shows about 14ms doing the one-hot encoding in `glmnetUtils` and 1ms scoring with `glmnet`. TODO: What's
+the remaining 5ms?
 
 
 
