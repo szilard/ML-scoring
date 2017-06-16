@@ -1,5 +1,5 @@
 
 library(plumber)
-r <- plumb("scoring.R")  
+r <- plumb("2-scoring.R")  
 r$run(port = 8000)
 
