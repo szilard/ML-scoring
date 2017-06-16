@@ -26,6 +26,7 @@ TODO: Concurrency/throughput, some attempts [here](https://github.com/szilard/ML
 The `plumber` R package provides a REST API for an R function. There is a ~5ms overhead for using the framework 
 (5.8ms measured via the Python client).  
 
+
 ### glmnet with plumber
 
 Trained LR on same data with `glmnet` (actually using `glmnetUtils` that deals with categorical variables doing 
@@ -39,6 +40,7 @@ Further [inspection](https://github.com/szilard/ML-scoring/blob/master/plumber-g
 shows about 14ms doing the one-hot encoding in `glmnetUtils` and 1ms scoring with `glmnet`,
 a total of 15ms. TODO: What's the remaining 5ms?
 
+
 ### gbm (the R package gbm) with plumber
 
 Trained `gbm` 100 trees, depth 10. `gbm` deals directly with categorical values (no need for one-hot encoding).
@@ -49,6 +51,9 @@ Total round-trip only 8ms (6ms for plumber and I [measured](https://github.com/s
 2ms for gbm)
 
 
+### xgboost with plumber
+
+...
 
 
 
