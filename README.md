@@ -26,4 +26,18 @@ TODO: Concurrency/throughput, some attempts [here](https://github.com/szilard/ML
 The `plumber` R package provides a REST API for an R function. There is a ~5ms overhead for using the framework 
 (5.8ms measured via the Python client).  
 
+### glmnet with plumber
+
+Trained LR on same data with `glmnet` (actually using `glmnetUtils` that deals with categorical variables doing 
+one-hot encoding under the hood and calling `glmnet`).
+
+Code [here](plumber-glmnet).
+
+Latency is ~25ms of which ~5ms is plumber and 20ms scoring with `glmnetUtils`. TODO: Breakdown scoring into 
+one-hot encoding and the scoring proper with `glmnet`.
+
+
+
+
+
 
