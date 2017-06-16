@@ -1,0 +1,3 @@
+
+time curl "http://localhost:8000/score?Month=c-8&DayofMonth=c-21&DayOfWeek=c-7&DepTime=1934&UniqueCarrier=AA&Origin=ATL&Dest=DFW&Distance=732"
+
