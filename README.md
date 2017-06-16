@@ -45,7 +45,8 @@ Trained `gbm` 100 trees, depth 10. `gbm` deals directly with categorical values 
 
 Code [here](plumber-gbm).
 
-Total round-trip only 8ms (6ms for plumber and I measured 2ms for gbm)
+Total round-trip only 8ms (6ms for plumber and I [measured](https://github.com/szilard/ML-scoring/blob/master/plumber-gbm/6-gbm_scoring_speed.R#L19-L25) 
+2ms for gbm)
 
 
 
