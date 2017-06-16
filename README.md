@@ -59,8 +59,12 @@ It [seems](https://github.com/szilard/ML-scoring/blob/master/plumber-xgboost/6-x
 scoring itself is ~1ms.
 
 
+------------------------------------------------------------------------
 
+## Rant
 
+Unless the tool is dealing with categorical variables internally (h2o, the `gbm` R package), one-hot encoding
+might take 90% of the scoring time and also 90% of the implementation work. In Python this might be even worse.
 
 
 
