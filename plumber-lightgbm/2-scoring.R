@@ -1,4 +1,4 @@
-library(gbm)
+library(lightgbm)
 
 load("lightgbm_model.RData")
 
