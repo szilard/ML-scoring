@@ -10,7 +10,7 @@ d_train <- fread("train-0.1m.csv")
 
 y_train <- ifelse(d_train$dep_delayed_15min=='Y',1,0)
 
-d_train_xtra <- lgb.prepare_rules(d_train)    ## changes d_train in place!!!
+d_train_xtra <- lgb.prepare_rules(d_train)    ## changes d_train in place!?
 d_train_num <- d_train_xtra$data
 cols_cats <- setdiff(names(d_train_xtra$rules),"dep_delayed_15min")
 
@@ -39,7 +39,9 @@ system.time({
   phat1 <- predict(md, data = X1)
 })
 
+
 rules <- d_train_xtra$rules
+rules$dep_delayed_15min <- NULL
 
 save(md, rules, file = "lightgbm_model.RData")
 
