@@ -27,19 +27,25 @@ system.time({
 })
 
 
-
 system.time({
   phat <- predict(md, data = X_train)
 })
 rocr_pred <- prediction(phat, d_train$dep_delayed_15min)
 performance(rocr_pred, "auc")
 
-X1 <- X_train[1,,drop=FALSE]
-system.time({
-  phat1 <- predict(md, data = X1)
-})
 
 rules <- d_train_xtra$rules
+d_train <- fread("train-0.1m.csv")
+d_train2 <- lgb.prepare_rules(d_train, rules = rules)$data
+p <- ncol(d_train2)-1
+X_train2 <- as.matrix(d_train2[,1:p])
 
-save(md, rules, file = "lightgbm_model.RData")
+for (i in 1:10) {
+  X1 <- X_train2[i,,drop=FALSE]
+  print(system.time({
+    phat1 <- predict(md, data = X1)
+  }))
+  print(phat1)
+}
+
 
