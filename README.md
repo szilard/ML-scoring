@@ -61,7 +61,7 @@ scoring itself is ~1ms. One-hot encoding will probably take a lot more.
 
 ### lightgbm with plumber
 
-TODO: Integer encoding
+TODO: Integer encoding (current code crashes with segfault, dunno why).
 
 Scoring itself is 1ms.
 
